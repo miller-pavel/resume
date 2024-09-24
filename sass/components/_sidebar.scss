@@ -1,0 +1,63 @@
+// sidebar section
+.sidebar {
+    padding: 24px;
+    width: 412px;
+    border-radius: 0 60px 0 0;
+    background-color: var(--grey-color);
+    position: relative;
+}
+
+.contact__title {
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--black-color);
+}
+
+// Sidebar elements
+.sidebar__text-wrapper:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+// sidebar ul list
+.sidebar__item {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.06em;
+
+    &:first-child {
+        padding-top: 12px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}
+
+// contacts, follow me list
+.address__link,
+.social__link {
+    display: flex;
+    align-items: center;
+
+    @include transition(color);
+}
+
+.address__link:hover,
+.social__link:hover {
+    color: var(--orange-color);
+}
+
+.address__icon,
+.social__icon {
+    margin-right: 12px;
+}
+
+// Tech and soft skill list
+.skill__list,
+.languages__item {
+    list-style: inside;
+}
+
+.skill__item::marker,
+.languages__item::marker {
+    color: var(--orange-color);
+}

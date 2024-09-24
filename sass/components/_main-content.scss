@@ -1,0 +1,231 @@
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.about__container {
+
+    padding: 24px 26px;
+    max-width: 815px;
+    border-radius: 60px;
+}
+
+// GLOBAL STYLE
+.title {
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--black-color);
+}
+
+.desc {
+    font-size: 20px;
+}
+
+.about-user__container .desc {
+    margin-top: 12px;
+}
+
+// ABOUT USER 
+.about-user__section {
+    padding-top: 0;
+}
+
+
+//EDUCATION
+.education__item {
+    display: flex;
+}
+
+.education__item:first-child {
+    padding-top: 14px;
+}
+
+.education__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.period__wrapper {
+    width: 295px;
+}
+
+.period {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.23;
+    min-width: 295px;
+}
+
+.position__item {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.06em;
+}
+
+.organization {
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--orange-color);
+}
+
+.specialized {
+    font-size: 20px;
+    letter-spacing: -0.06em;
+
+}
+
+.organization__wrapper {
+    margin-left: 46px;
+    max-width: 462px;
+}
+
+.project__all-list {
+    padding-top: 12px;
+}
+
+.project__all-item {
+    display: flex;
+    align-items: center;
+}
+
+.project__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    max-width: 524px;
+
+    margin: auto;
+    gap: 12px;
+}
+
+.project__item {
+    width: 256px;
+    height: 152px;
+    border-radius: 20px;
+}
+
+.project__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    background-color: var(--grey-color);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.project__link:hover,
+.project__link:focus {
+    background: #EBF3FF;
+    box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #B4C1D5;
+}
+
+.project__title {
+    margin-bottom: 12px;
+
+    font-weight: 500;
+    font-size: 18px;
+
+    @include transition(transform)
+}
+
+.project__link:hover .project__title,
+.project__link:focus .project__title {
+    transform: translateY(0%);
+    animation: overlay-hover;
+}
+
+.preview__text-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    padding: 8px;
+
+    background: linear-gradient(117.54deg, rgba(255, 255, 255, 0.5) -19.85%, rgba(235, 235, 235, 0.367354) 4.2%, rgba(224, 224, 224, 0.287504) 13.88%, rgba(212, 212, 212, 0.21131) 27.98%, rgba(207, 207, 207, 0.175584) 37.8%, rgba(202, 202, 202, 0.143432) 44.38%, rgba(200, 200, 200, 0.126299) 50.54%, rgba(196, 196, 196, 0.1) 60.21%);
+    box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+
+    transform: translateY(calc(100% - 38px));
+    @include transition(transform)
+}
+
+.project__link:hover .preview__text-overlay,
+.project__link:focus .preview__text-overlay {
+    overflow: scroll;
+    transform: translateY(0%);
+}
+
+.preview__text-overlay::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0 transparent;
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+.preview__text-overlay::-webkit-scrollbar {
+    width: 1px;
+    background-color: transparent;
+}
+
+// projects
+// .project__container-min {}
+
+// .container {}
+
+// .title {}
+
+.project__list-min {
+    margin-top: 12px;
+}
+
+.project__item-min {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.23;
+    min-width: 295px;
+
+    &::marker {
+        font-weight: bold;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+.project-name__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.project-name {
+    font-weight: 600;
+    font-size: 22px;
+    margin-right: 24px;
+}
+
+.project-skill {
+    font-weight: 500;
+    font-size: 14px;
+
+    padding: 5px;
+    border-radius: 10px;
+
+    color: var(--white-color);
+    background-color: var(--orange-color);
+}
+
+.project__desc {
+    font-size: 18px;
+}
+
+.project__desc--technoligy {
+    color: rgb(251, 109, 58);
+    font-weight: 600;
+}
