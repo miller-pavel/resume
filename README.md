@@ -6,3 +6,10 @@ About Me
     🌌 In my spare time, I create beautiful and productive applications.
     :octocat: My resume
 
+Courses
+
+    GoIT Full Stack Developer
+        HTML&CSS
+        JavaScript
+        React
+        NodeJs
